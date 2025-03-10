@@ -1,0 +1,7 @@
+# Ignore the actual config file with API key
+config.js
+
+# Common files to ignore
+.DS_Store
+node_modules/
+.env

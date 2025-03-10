@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        <div class="search-container">
+            <input type="text" id="location" placeholder="Enter ZIP code" value="20105">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <div class="weather-info">
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                <div class="weather-details">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <div class="temperature" id="temperature"></div>
+                    <div class="condition" id="condition"></div>
+                    <div class="location" id="location-name"></div>
+                </div>
+                <div class="additional-info">
+                    <div id="humidity"></div>
+                    <div id="wind"></div>
+                    <div id="feels-like"></div>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2>3-Day Forecast</h2>
+                <div class="forecast-container" id="forecast-container">
+                    <!-- Forecast items will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
